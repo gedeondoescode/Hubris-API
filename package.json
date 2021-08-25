@@ -1,0 +1,25 @@
+{
+  "name": "hubris-api",
+  "version": "1.0.0",
+  "description": "Hubris API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API",
+    "backend",
+    "hubris"
+  ],
+  "author": "Hubris",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "mongoose": "^6.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12"
+  }
+}
