@@ -31,6 +31,6 @@ app.use("/api/auth", authRoute)
 app.use("/api/posts", postRoute)
 
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Now online")
 })
