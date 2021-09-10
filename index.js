@@ -12,7 +12,6 @@ const userRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
 const postRoute = require("./routes/posts")
 
-const port = 1010
 
 dotenv.config();
 
@@ -33,5 +32,5 @@ app.use("/api/posts", postRoute)
 
 
 app.listen(port, () => {
-    console.log(`Running on port ${port}`)
+    console.log("Now online")
 })
