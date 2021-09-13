@@ -26,7 +26,7 @@ Backend for Hubris social network
 -likes: Array
 ```
 ---
-This API is a bare framework for what is to come later in the near future. This only includes basic functionality for various requests such as registering, logging in, following and unfollowing users, creating and updating poosts and various more features.
+This API is a bare framework for what is to come later in the near future. This only includes basic functionality for various requests such as registering, logging in, following and unfollowing users, creating and updating posts and various more features.
 
 ## Installing dependencies
 This application was built using yarn. 
