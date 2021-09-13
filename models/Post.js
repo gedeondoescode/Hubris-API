@@ -11,8 +11,13 @@ const PostSchema = new mongoose.Schema(
             max: 1000
         },
         img:{
-            type:String
+            type:String,
+            required: true
         },
+        vid:{
+            type: String,
+            required: true
+        }, 
         likes: {
             type:Array,
             default: []

@@ -1,8 +1,9 @@
 const router = require("express").Router();
 const User = require("../models/User");
 const Post = require("../models/Post");
+
 //create posts
-router.post('/', async (req, res)=>{
+router.post('/', '/upload', async (req, res, next)=>{
     const newPost = new Post(req.body)
 
     try{
