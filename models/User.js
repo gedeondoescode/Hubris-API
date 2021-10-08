@@ -44,9 +44,10 @@ const UserSchema = new mongoose.Schema({
         type: String,
         max: 100
     },
-    badges: {
-        type: Number,
-        enum:[1,2,3,4,5]
+    badge: {
+        type: String,
+        default: "",
+        enum: ["Owner", "Administrator", "Moderator", "Verified Creator", "Supporter"]
     }
 },
 {timestamps: true}
