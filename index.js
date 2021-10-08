@@ -5,11 +5,13 @@ const mongoose = require("mongoose");
 const helmet = require("helmet");
 const morgan = require("morgan");
 const dotenv = require("dotenv");
+// Public
+const userRoute = require("./routes/public/usersRoute");
+const authRoute = require("./routes/public/authRoute");
+const postRoute = require("./routes/public/postsRoute")
 
-const userRoute = require("./routes/users");
-const authRoute = require("./routes/auth");
-const postRoute = require("./routes/posts")
-
+//Private
+const adminRoute = require("./routes/private/adminRoute")
 
 dotenv.config();
 
@@ -23,11 +25,13 @@ app.use(express.json());
 app.use(helmet());
 app.use(morgan("common"));
 
+// Public routes
+app.use("/v1/api/users", userRoute)
+app.use("/v1/api/auth", authRoute)
+app.use("/v1/api/posts", postRoute)
 
-app.use("/api/users", userRoute)
-app.use("/api/auth", authRoute)
-app.use("/api/posts", postRoute)
-
+// Private routes
+app.use("/v3/api/admin", adminRoute)
 
 app.listen(process.env.PORT || 1010, () => {
     console.log("Now online")
