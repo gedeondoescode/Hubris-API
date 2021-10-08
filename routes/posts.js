@@ -3,7 +3,7 @@ const User = require("../models/User");
 const Post = require("../models/Post");
 
 //create posts
-router.post('/', '/upload', async (req, res, next)=>{
+router.post('/', async (req, res, next)=>{
     const newPost = new Post(req.body)
 
     try{

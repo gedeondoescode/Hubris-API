@@ -5,7 +5,6 @@ const mongoose = require("mongoose");
 const helmet = require("helmet");
 const morgan = require("morgan");
 const dotenv = require("dotenv");
-const multer = require("multer");
 
 const userRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
