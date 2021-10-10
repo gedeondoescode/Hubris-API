@@ -2,8 +2,7 @@
 
 Backend for Hubris social network
 
-[![CodeQL](https://github.com/gedeondoescode/Hubris-API/actions/workflows/codeql-analysis.yml/badge.svg?branch=master)](https://github.com/gedeondoescode/Hubris-API/actions/workflows/codeql-analysis.yml)
-
+[![Main](https://github.com/gedeondoescode/Hubris-API/actions/workflows/main.yml/badge.svg)](https://github.com/gedeondoescode/Hubris-API/actions/workflows/main.yml)
 ## MongoDB Schema 
 
 `User`
