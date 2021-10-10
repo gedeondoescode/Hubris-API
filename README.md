@@ -2,7 +2,6 @@
 
 Backend for Hubris social network
 
-[![Main](https://github.com/gedeondoescode/Hubris-API/actions/workflows/main.yml/badge.svg)](https://github.com/gedeondoescode/Hubris-API/actions/workflows/main.yml)
 ## MongoDB Schema 
 
 `User`
