@@ -24,9 +24,9 @@ app.use(helmet());
 app.use(morgan("common"));
 
 // Public routes
-app.use("/v1/api/users", userRoute)
-app.use("/v1/api/auth", authRoute)
-app.use("/v1/api/posts", postRoute)
+app.use("/api/users", userRoute)
+app.use("/api/auth", authRoute)
+app.use("/api/posts", postRoute)
 
 app.listen(process.env.PORT || 1010, () => {
     console.log("Now online")
